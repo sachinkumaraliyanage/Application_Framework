@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        async function fuser_async() {
+            const res=await fetch('https://api.github.com/users');
+            const json=await res.json();
+            console.log(json);
+
+        }
+        fuser_async();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
